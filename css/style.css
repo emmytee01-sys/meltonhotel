@@ -489,3 +489,33 @@
     padding-right: 0;
     border-right: none;
 }
+
+/*** About Us Custom Modern Styling ***/
+.about-img {
+    object-fit: cover !important;
+    height: 200px !important;
+    width: 100% !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.about-img:hover {
+    transform: translateY(-8px) scale(1.02) !important;
+    box-shadow: 0 16px 36px rgba(254, 161, 22, 0.25) !important;
+}
+
+.about-feature-box {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border-left: 4px solid var(--primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+}
+
+.about-feature-box:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
