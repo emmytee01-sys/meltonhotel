@@ -156,18 +156,18 @@
                     <div class="row g-2">
                         <div class="col-md-10">
                             <div class="row g-2">
-                                <div class="col-md-3">
+                                <div class="col-md-2">
                                     <div class="date" id="date1" data-target-input="nearest">
                                         <input type="text" class="form-control datetimepicker-input"
                                             placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-2">
                                     <div class="date" id="date2" data-target-input="nearest">
                                         <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-2">
                                     <select class="form-select">
                                         <option selected>Adult</option>
                                         <option value="1">Adult 1</option>
@@ -175,12 +175,30 @@
                                         <option value="3">Adult 3</option>
                                     </select>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-2">
                                     <select class="form-select">
                                         <option selected>Child</option>
                                         <option value="1">Child 1</option>
                                         <option value="2">Child 2</option>
                                         <option value="3">Child 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <select class="form-select">
+                                        <option selected>Room Type</option>
+                                        <option value="1">Premium Suites</option>
+                                        <option value="2">Deluxe Suite</option>
+                                        <option value="3">Kitchenette Room</option>
+                                        <option value="4">Business Suite</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <select class="form-select">
+                                        <option selected>Hall Type</option>
+                                        <option value="1">Ernestina Hall</option>
+                                        <option value="2">Victoria Hall</option>
+                                        <option value="3">Gallery Hall</option>
+                                        <option value="4">Conference Room</option>
                                     </select>
                                 </div>
                             </div>
@@ -365,8 +383,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="video">
-
+                    <div class="video position-relative" style="display: flex; align-items: center; justify-content: center; overflow: hidden; background: none;">
+                        <video autoplay loop muted playsinline style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+                            <source src="img/gallery-video.mp4" type="video/mp4">
+                        </video>
+                        <div class="position-absolute text-center" style="z-index: 1; background: rgba(15, 23, 43, 0.75); padding: 25px 40px; border-radius: 10px; backdrop-filter: blur(5px);">
+                            <h2 class="text-white mb-2 text-uppercase" style="letter-spacing: 2px;">Elestina Hall</h2>
+                            <h5 class="text-primary mb-0"><i class="fa fa-users me-2"></i>Capacity: 250 Guests</h5>
+                        </div>
                     </div>
                 </div>
             </div>
