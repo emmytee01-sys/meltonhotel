@@ -519,3 +519,20 @@
     transform: translateX(5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
+
+/* Room Item Layout Fix */
+.room-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.room-item .p-4 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.room-item .p-4 > .d-flex:last-child {
+    margin-top: auto;
+}
