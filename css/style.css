@@ -536,3 +536,22 @@
 .room-item .p-4 > .d-flex:last-child {
     margin-top: auto;
 }
+
+/* Dark Confirmation Booking Modal */
+.modal-dark-input::placeholder {
+    color: #7a7d88 !important;
+}
+
+.modal-dark-input:focus {
+    background-color: #262830 !important;
+    border-color: var(--primary) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 0.25rem rgba(254, 161, 22, 0.25) !important;
+}
+
+#modalConfirmForm button[type="submit"]:hover {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(254, 161, 22, 0.4) !important;
+}

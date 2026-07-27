@@ -64,11 +64,7 @@
                         </div>
                         <div class="col-lg-5 px-5 text-end">
                             <div class="d-inline-flex align-items-center py-2">
-                                <a class="me-3 text-dark btn-sm-square bg-white rounded-circle wow zoomIn" data-wow-delay="0.1s" href="" style="transition: .3s;"><i class="fab fa-facebook-f"></i></a>
-                                <a class="me-3 text-dark btn-sm-square bg-white rounded-circle wow zoomIn" data-wow-delay="0.2s" href="" style="transition: .3s;"><i class="fab fa-twitter"></i></a>
-                                <a class="me-3 text-dark btn-sm-square bg-white rounded-circle wow zoomIn" data-wow-delay="0.3s" href="" style="transition: .3s;"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="me-3 text-dark btn-sm-square bg-white rounded-circle wow zoomIn" data-wow-delay="0.4s" href="" style="transition: .3s;"><i class="fab fa-instagram"></i></a>
-                                <a class="text-dark btn-sm-square bg-white rounded-circle wow zoomIn" data-wow-delay="0.5s" href="" style="transition: .3s;"><i class="fab fa-youtube"></i></a>
+                                <a class="text-dark btn-sm-square bg-white rounded-circle wow zoomIn" data-wow-delay="0.1s" href="https://www.instagram.com/Martinoshotellagos/" target="_blank" rel="noopener noreferrer" style="transition: .3s;"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -82,11 +78,11 @@
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
                                 <a href="index.html" class="nav-item nav-link"><i class="fa fa-home me-2"></i>Home</a>
+                                <a href="about.html" class="nav-item nav-link"><i class="fa fa-info-circle me-2"></i>About</a>
                                 <a href="room.html" class="nav-item nav-link active"><i class="fa fa-bed me-2"></i>Rooms</a>
                                 <a href="events.html" class="nav-item nav-link"><i class="fa fa-glass-cheers me-2"></i>Event Halls</a>
                                 <a href="booking.html" class="nav-item nav-link"><i class="fa fa-calendar-check me-2"></i>Bookings</a>
                                 <a href="service.html" class="nav-item nav-link"><i class="fa fa-concierge-bell me-2"></i>Services</a>
-                                <a href="about.html" class="nav-item nav-link"><i class="fa fa-info-circle me-2"></i>About</a>
                                 <a href="contact.html" class="nav-item nav-link"><i class="fa fa-envelope-open me-2"></i>Contact</a>
                             </div>
                             
@@ -124,14 +120,13 @@
                         <div class="col-md-10">
                             <div class="row g-2">
                                 <div class="col-md-2">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input"
-                                            placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                    <div class="date" id="date1">
+                                        <input type="date" class="form-control" placeholder="Check in" />
                                     </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                    <div class="date" id="date2">
+                                        <input type="date" class="form-control" placeholder="Check out" />
                                     </div>
                                 </div>
                                 <div class="col-md-2">
@@ -145,6 +140,7 @@
                                 <div class="col-md-2">
                                     <select class="form-select">
                                         <option selected>Child</option>
+                                        <option value="0">None</option>
                                         <option value="1">Child 1</option>
                                         <option value="2">Child 2</option>
                                         <option value="3">Child 3</option>
@@ -153,25 +149,25 @@
                                 <div class="col-md-2">
                                     <select class="form-select">
                                         <option selected>Room Type</option>
-                                        <option value="1">Premium Suites</option>
-                                        <option value="2">Deluxe Suite</option>
-                                        <option value="3">Kitchenette Room</option>
-                                        <option value="4">Business Suite</option>
+                                        <option value="1">Premium Suites - ₦30,000</option>
+                                        <option value="2">Deluxe Suite - ₦35,000</option>
+                                        <option value="3">Kitchenette Room - ₦40,000</option>
+                                        <option value="4">Business Suite - ₦35,000</option>
                                     </select>
                                 </div>
                                 <div class="col-md-2">
                                     <select class="form-select">
                                         <option selected>Hall Type</option>
-                                        <option value="1">Ernestina Hall</option>
-                                        <option value="2">Victoria Hall</option>
-                                        <option value="3">Gallery Hall</option>
-                                        <option value="4">Conference Room</option>
+                                        <option value="1">Ernestina Hall - ₦600,000</option>
+                                        <option value="2">Victoria Hall - ₦1,000,000</option>
+                                        <option value="3">Gallery Hall - ₦350,000</option>
+                                        <option value="4">Conference Room - ₦150,000</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-primary w-100">Submit</button>
+                            <button class="btn btn-primary w-100">Book Now</button>
                         </div>
                     </div>
                 </div>
@@ -327,31 +323,32 @@
 
                                 </div>
                                 <div class="col-lg-7">
-                                    <form>
-                                        <div class="row g-3">
-                                            <div class="col-md-6">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                                    <label for="name">Your Name</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-floating">
-                                                    <input type="email" class="form-control" id="email" placeholder="Your Email Address">
-                                                    <label for="email">Your Email Address</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-floating">
-                                                    <textarea class="form-control" placeholder="How can we assist you?" id="message" style="height: 120px"></textarea>
-                                                    <label for="message">How can we assist you?</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                            </div>
-                                        </div>
-                                    </form>
+                                     <form action="https://api.web3forms.com/submit" method="POST">
+                                         <input type="hidden" name="access_key" value="d2b82a60-1b35-4c09-b6e2-045fae0e93cb">
+                                         <div class="row g-3">
+                                             <div class="col-md-6">
+                                                 <div class="form-floating">
+                                                     <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                                                     <label for="name">Your Name</label>
+                                                 </div>
+                                             </div>
+                                             <div class="col-md-6">
+                                                 <div class="form-floating">
+                                                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email Address" required>
+                                                     <label for="email">Your Email Address</label>
+                                                 </div>
+                                             </div>
+                                             <div class="col-12">
+                                                 <div class="form-floating">
+                                                     <textarea class="form-control" name="message" placeholder="How can we assist you?" id="message" style="height: 120px" required></textarea>
+                                                     <label for="message">How can we assist you?</label>
+                                                 </div>
+                                             </div>
+                                             <div class="col-12">
+                                                 <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                             </div>
+                                         </div>
+                                     </form>
                                 </div>
                             </div>
                         </div>
@@ -377,10 +374,7 @@
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>07078993462</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>martinoshotel@gmail.com</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/Martinoshotellagos/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-12">

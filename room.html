@@ -64,11 +64,7 @@
                         </div>
                         <div class="col-lg-5 px-5 text-end">
                             <div class="d-inline-flex align-items-center py-2">
-                                <a class="me-3 text-dark btn-sm-square bg-white rounded-circle wow zoomIn" data-wow-delay="0.1s" href="" style="transition: .3s;"><i class="fab fa-facebook-f"></i></a>
-                                <a class="me-3 text-dark btn-sm-square bg-white rounded-circle wow zoomIn" data-wow-delay="0.2s" href="" style="transition: .3s;"><i class="fab fa-twitter"></i></a>
-                                <a class="me-3 text-dark btn-sm-square bg-white rounded-circle wow zoomIn" data-wow-delay="0.3s" href="" style="transition: .3s;"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="me-3 text-dark btn-sm-square bg-white rounded-circle wow zoomIn" data-wow-delay="0.4s" href="" style="transition: .3s;"><i class="fab fa-instagram"></i></a>
-                                <a class="text-dark btn-sm-square bg-white rounded-circle wow zoomIn" data-wow-delay="0.5s" href="" style="transition: .3s;"><i class="fab fa-youtube"></i></a>
+                                <a class="text-dark btn-sm-square bg-white rounded-circle wow zoomIn" data-wow-delay="0.1s" href="https://www.instagram.com/Martinoshotellagos/" target="_blank" rel="noopener noreferrer" style="transition: .3s;"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -82,11 +78,11 @@
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
                                 <a href="index.html" class="nav-item nav-link"><i class="fa fa-home me-2"></i>Home</a>
+                                <a href="about.html" class="nav-item nav-link"><i class="fa fa-info-circle me-2"></i>About</a>
                                 <a href="room.html" class="nav-item nav-link active"><i class="fa fa-bed me-2"></i>Rooms</a>
                                 <a href="events.html" class="nav-item nav-link"><i class="fa fa-glass-cheers me-2"></i>Event Halls</a>
                                 <a href="booking.html" class="nav-item nav-link"><i class="fa fa-calendar-check me-2"></i>Bookings</a>
                                 <a href="service.html" class="nav-item nav-link"><i class="fa fa-concierge-bell me-2"></i>Services</a>
-                                <a href="about.html" class="nav-item nav-link"><i class="fa fa-info-circle me-2"></i>About</a>
                                 <a href="contact.html" class="nav-item nav-link"><i class="fa fa-envelope-open me-2"></i>Contact</a>
                             </div>
                             
@@ -124,14 +120,13 @@
                         <div class="col-md-10">
                             <div class="row g-2">
                                 <div class="col-md-2">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input"
-                                            placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                    <div class="date" id="date1">
+                                        <input type="date" class="form-control" placeholder="Check in" />
                                     </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                    <div class="date" id="date2">
+                                        <input type="date" class="form-control" placeholder="Check out" />
                                     </div>
                                 </div>
                                 <div class="col-md-2">
@@ -145,6 +140,7 @@
                                 <div class="col-md-2">
                                     <select class="form-select">
                                         <option selected>Child</option>
+                                        <option value="0">None</option>
                                         <option value="1">Child 1</option>
                                         <option value="2">Child 2</option>
                                         <option value="3">Child 3</option>
@@ -153,25 +149,25 @@
                                 <div class="col-md-2">
                                     <select class="form-select">
                                         <option selected>Room Type</option>
-                                        <option value="1">Premium Suites</option>
-                                        <option value="2">Deluxe Suite</option>
-                                        <option value="3">Kitchenette Room</option>
-                                        <option value="4">Business Suite</option>
+                                        <option value="1">Premium Suites - ₦30,000</option>
+                                        <option value="2">Deluxe Suite - ₦35,000</option>
+                                        <option value="3">Kitchenette Room - ₦40,000</option>
+                                        <option value="4">Business Suite - ₦35,000</option>
                                     </select>
                                 </div>
                                 <div class="col-md-2">
                                     <select class="form-select">
                                         <option selected>Hall Type</option>
-                                        <option value="1">Ernestina Hall</option>
-                                        <option value="2">Victoria Hall</option>
-                                        <option value="3">Gallery Hall</option>
-                                        <option value="4">Conference Room</option>
+                                        <option value="1">Ernestina Hall - ₦600,000</option>
+                                        <option value="2">Victoria Hall - ₦1,000,000</option>
+                                        <option value="3">Gallery Hall - ₦350,000</option>
+                                        <option value="4">Conference Room - ₦150,000</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-primary w-100">Submit</button>
+                            <button class="btn btn-primary w-100">Book Now</button>
                         </div>
                     </div>
                 </div>
@@ -188,7 +184,7 @@
                     <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Rooms</span></h1>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/premium.jpg" alt="Premium Suite" style="object-fit: cover; width: 100%; height: 250px;">
@@ -212,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/room-2.jpg" alt="Deluxe Suite" style="object-fit: cover; height: 250px; width: 100%;">
@@ -236,7 +232,31 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/kitchenette.jpeg" alt="Kitchenette Room" style="object-fit: cover; height: 250px; width: 100%;">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦40,000/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Kitchenette Room</h5>
+
+                                </div>
+                                <div class="d-flex flex-wrap mb-3">
+                                    <small class="border-end me-2 pe-2 mb-2 text-nowrap"><i class="fa fa-bed text-primary me-2"></i>Queen's Bed</small>
+                                    <small class="border-end me-2 pe-2 mb-2 text-nowrap"><i class="fa fa-bath text-primary me-2"></i>Shower</small>
+                                    <small class="mb-2 text-nowrap"><i class="fa fa-wifi text-primary me-2"></i>Wi-Fi</small>
+                                </div>
+                                <p class="text-body mb-3">Feel right at home in our Kitchenette Room. Offering the perfect blend of convenience and style, this room features a fully equipped kitchenette, ideal for extended stays.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="kitchenette-room.html">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/business/WhatsApp Image 2026-07-15 at 8.17.49 PM.jpeg" alt="Business Suite" style="object-fit: cover; width: 100%; height: 250px;">
@@ -255,78 +275,6 @@
                                 <p class="text-body mb-3">Elevate your work trips in our Business Suite. Thoughtfully appointed with a dedicated workspace, high-speed internet, and a serene atmosphere to ensure you stay productive and well-rested.</p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="business-suite.html">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="room-item shadow rounded overflow-hidden">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/kitchenette.jpeg" alt="Kitchenette" style="object-fit: cover; width: 100%; height: 250px;">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦40,000/Night</small>
-                            </div>
-                            <div class="p-4 mt-2">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <h5 class="mb-0">Kitchenette</h5>
-
-                                </div>
-                                <div class="d-flex flex-wrap mb-3">
-                                    <small class="border-end me-2 pe-2 mb-2 text-nowrap"><i class="fa fa-bed text-primary me-2"></i>Queen's Bed</small>
-                                    <small class="border-end me-2 pe-2 mb-2 text-nowrap"><i class="fa fa-bath text-primary me-2"></i>Shower</small>
-                                    <small class="mb-2 text-nowrap"><i class="fa fa-wifi text-primary me-2"></i>Wi-Fi</small>
-                                </div>
-                                <p class="text-body mb-3">Feel right at home in our Kitchenette Room. Offering the perfect blend of convenience and style, this room features a fully equipped kitchenette, ideal for extended stays.</p>
-                                <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="kitchenette-room.html">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="room-item shadow rounded overflow-hidden">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/premium.jpg" alt="Premium Suite" style="object-fit: cover; width: 100%; height: 250px;">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦30,000/Night</small>
-                            </div>
-                            <div class="p-4 mt-2">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <h5 class="mb-0">Premium Suites</h5>
-
-                                </div>
-                                <div class="d-flex flex-wrap mb-3">
-                                    <small class="border-end me-2 pe-2 mb-2 text-nowrap"><i class="fa fa-bed text-primary me-2"></i>Queen's Bed</small>
-                                    <small class="border-end me-2 pe-2 mb-2 text-nowrap"><i class="fa fa-bath text-primary me-2"></i>Shower</small>
-                                    <small class="mb-2 text-nowrap"><i class="fa fa-wifi text-primary me-2"></i>Wi-Fi</small>
-                                </div>
-                                <p class="text-body mb-3">Experience the ultimate comfort in our Premium Suites. Carefully designed for both relaxation and productivity, it comes equipped with premium amenities, a comfortable Queen's bed, and modern decor.</p>
-                                <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="premium-room.html">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="room-item shadow rounded overflow-hidden">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/carousel-1.jpg" alt="Deluxe Suite" style="object-fit: cover; width: 100%; height: 250px;">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦35,000/Night</small>
-                            </div>
-                            <div class="p-4 mt-2">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <h5 class="mb-0">Deluxe Suite</h5>
-
-                                </div>
-                                <div class="d-flex flex-wrap mb-3">
-                                    <small class="border-end me-2 pe-2 mb-2 text-nowrap"><i class="fa fa-bed text-primary me-2"></i>Queen's Bed</small>
-                                    <small class="border-end me-2 pe-2 mb-2 text-nowrap"><i class="fa fa-bath text-primary me-2"></i>Shower</small>
-                                    <small class="mb-2 text-nowrap"><i class="fa fa-wifi text-primary me-2"></i>Wi-Fi</small>
-                                </div>
-                                <p class="text-body mb-3">Indulge in the spacious elegance of our Deluxe Suite. Featuring sophisticated interiors and a lavish bathroom, this suite is perfectly tailored for a memorable and luxurious stay.</p>
-                                <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="deluxe-room.html">View Detail</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
                                 </div>
                             </div>
@@ -382,31 +330,32 @@
 
                                 </div>
                                 <div class="col-lg-7">
-                                    <form>
-                                        <div class="row g-3">
-                                            <div class="col-md-6">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                                    <label for="name">Your Name</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-floating">
-                                                    <input type="email" class="form-control" id="email" placeholder="Your Email Address">
-                                                    <label for="email">Your Email Address</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-floating">
-                                                    <textarea class="form-control" placeholder="How can we assist you?" id="message" style="height: 120px"></textarea>
-                                                    <label for="message">How can we assist you?</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                            </div>
-                                        </div>
-                                    </form>
+                                     <form action="https://api.web3forms.com/submit" method="POST">
+                                         <input type="hidden" name="access_key" value="d2b82a60-1b35-4c09-b6e2-045fae0e93cb">
+                                         <div class="row g-3">
+                                             <div class="col-md-6">
+                                                 <div class="form-floating">
+                                                     <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                                                     <label for="name">Your Name</label>
+                                                 </div>
+                                             </div>
+                                             <div class="col-md-6">
+                                                 <div class="form-floating">
+                                                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email Address" required>
+                                                     <label for="email">Your Email Address</label>
+                                                 </div>
+                                             </div>
+                                             <div class="col-12">
+                                                 <div class="form-floating">
+                                                     <textarea class="form-control" name="message" placeholder="How can we assist you?" id="message" style="height: 120px" required></textarea>
+                                                     <label for="message">How can we assist you?</label>
+                                                 </div>
+                                             </div>
+                                             <div class="col-12">
+                                                 <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                             </div>
+                                         </div>
+                                     </form>
                                 </div>
                             </div>
                         </div>
@@ -432,10 +381,7 @@
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>07078993462</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>martinoshotel@gmail.com</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/Martinoshotellagos/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-12">
